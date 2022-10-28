@@ -6,6 +6,7 @@
 package View;
 
 import Control.Control;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -38,6 +39,22 @@ public class View extends javax.swing.JFrame {
         inputCryptoProfit = new javax.swing.JTextField();
         Submit = new javax.swing.JButton();
         viewTable = new javax.swing.JButton();
+        socialInsuranceField = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        personalDiscountBox = new javax.swing.JCheckBox();
+        jLabel7 = new javax.swing.JLabel();
+        lifeInsuranceField = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        healthInsuranceField = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        rmfField = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        ssfField = new javax.swing.JTextField();
+        pvdField = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,6 +92,60 @@ public class View extends javax.swing.JFrame {
             }
         });
 
+        socialInsuranceField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                socialInsuranceFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Social Insurance :");
+
+        jLabel6.setText("Personal Discount :");
+
+        jLabel7.setText("Other Insurance ");
+
+        lifeInsuranceField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lifeInsuranceFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Life Insurance :");
+
+        healthInsuranceField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                healthInsuranceFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Health Insurance :");
+
+        rmfField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rmfFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setText("Fund");
+
+        jLabel11.setText("RMF :");
+
+        jLabel12.setText("SSF :");
+
+        ssfField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ssfFieldActionPerformed(evt);
+            }
+        });
+
+        pvdField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pvdFieldActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setText("PVD :");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -82,25 +153,54 @@ public class View extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(inputSalary, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(inputMonth, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(inputCryptoProfit, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jLabel1))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(118, 118, 118)
+                        .addGap(121, 121, 121)
                         .addComponent(Submit, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(28, 28, 28)
-                        .addComponent(viewTable, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                        .addComponent(viewTable, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pvdField)
+                            .addComponent(lifeInsuranceField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(socialInsuranceField)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(inputSalary, javax.swing.GroupLayout.DEFAULT_SIZE, 332, Short.MAX_VALUE)
+                                        .addComponent(inputMonth, javax.swing.GroupLayout.DEFAULT_SIZE, 332, Short.MAX_VALUE)
+                                        .addComponent(inputCryptoProfit, javax.swing.GroupLayout.DEFAULT_SIZE, 332, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(21, 21, 21)
+                                            .addComponent(jLabel1)))
+                                    .addComponent(personalDiscountBox))
+                                .addGap(0, 12, Short.MAX_VALUE))
+                            .addComponent(healthInsuranceField)
+                            .addComponent(rmfField)
+                            .addComponent(ssfField))))
+                .addGap(43, 43, 43))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(234, 234, 234))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(225, 225, 225)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,14 +216,46 @@ public class View extends javax.swing.JFrame {
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(inputMonth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(inputCryptoProfit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputCryptoProfit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(personalDiscountBox, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(socialInsuranceField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lifeInsuranceField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(healthInsuranceField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rmfField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ssfField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(pvdField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(viewTable)
                     .addComponent(Submit))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addGap(27, 27, 27))
         );
 
         pack();
@@ -143,22 +275,106 @@ public class View extends javax.swing.JFrame {
 
     private void SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitActionPerformed
         // TODO add your handling code here:
-        double salary, cp = 0.00;
+        double limit = 0.00;
+        //normal input parameter
+        double salary = limit, cp = limit;
         int month = 0;
-        salary = Double.parseDouble(inputSalary.getText());
-        month = Integer.parseInt(inputMonth.getText());
-        cp = Double.parseDouble(inputCryptoProfit.getText());
-        Control c = new Control
-        if(salary == 0.00) {
-            JOptionpane.
-        } else if(month == 0) {
-            
-        } else if (cp == 0) {
-            
-        } else if(salary > 0.00 && month <= 1 && month >= 12){
-            
+        String sa = "", crypto = "", mo = "";
+        //discount input parameter
+        String pd = "", sc = "", li = "", hi = "", r = "", s = "", p = "";
+        double maxPD = 60000.00;
+        double personalDiscount = limit;
+        double socialInsurance = limit;
+        double lifeInsurance = limit;
+        double healthInsurance = limit;
+        double rmf = limit, ssf = limit, pvd = limit;
+        //normal input
+        sa = inputSalary.getText();
+        mo = inputMonth.getText();
+        crypto = inputCryptoProfit.getText();
+        //discount input
+        sc = socialInsuranceField.getText();
+        li = lifeInsuranceField.getText();
+        hi = healthInsuranceField.getText();
+        r = rmfField.getText();
+        s = ssfField.getText();
+        p = pvdField.getText();
+        if(!sc.equals("")) {
+           socialInsurance = Double.parseDouble(socialInsuranceField.getText());
+        }
+        if(!li.equals("")) {
+           lifeInsurance = Double.parseDouble(lifeInsuranceField.getText());
+        } 
+        if(!hi.equals("")) {
+           healthInsurance = Double.parseDouble(healthInsuranceField.getText()); 
+        } 
+        if(!r.equals("")) {
+            rmf = Double.parseDouble(rmfField.getText());
+        }
+        if(!s.equals("")) {
+            ssf = Double.parseDouble(ssfField.getText());
+        }
+        if(!p.equals("")) {
+            pvd = Double.parseDouble(pvdField.getText());
+        }
+
+        //check discount valid
+        if(personalDiscountBox.isSelected()) {
+            personalDiscount = maxPD;
+        }
+        //check input valid
+        if(sa.equals("")) {
+          JOptionPane.showMessageDialog(this, "Fail : Salary can not be empty.");
+        } else if(mo.equals("")) {
+          JOptionPane.showMessageDialog(this, "Fail : Month can not be empty.");
+        } else if (crypto.equals("")) {
+          JOptionPane.showMessageDialog(this, "Fail : Cryoto Profit can not be empty.");
+        } else {
+            //send all input to control
+            salary = Double.parseDouble(inputSalary.getText());
+            month = Integer.parseInt(inputMonth.getText());
+            cp = Double.parseDouble(inputCryptoProfit.getText());
+            System.out.println(salary);
+            if(salary > limit){
+                JOptionPane.showMessageDialog(this, "Fail : Salary can not be zero.");  
+            } else if (month < 1 && month > 12) {
+                JOptionPane.showMessageDialog(this, "Fail : Month can not be below 1 or above 12");
+            }
+            Control c = new Control();
+            c.setData(salary, month, cp);
+            c.setDiscount(personalDiscount, socialInsurance, lifeInsurance, healthInsurance, rmf, ssf, pvd);
+            if(!c.checkDiscount().equals("")) {
+                JOptionPane.showMessageDialog(this, c.checkDiscount());
+            } else {
+                c.calculate();
+                JOptionPane.showMessageDialog(this, c.returnStatus());
+            }
         }
     }//GEN-LAST:event_SubmitActionPerformed
+
+    private void socialInsuranceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_socialInsuranceFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_socialInsuranceFieldActionPerformed
+
+    private void lifeInsuranceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lifeInsuranceFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lifeInsuranceFieldActionPerformed
+
+    private void healthInsuranceFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_healthInsuranceFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_healthInsuranceFieldActionPerformed
+
+    private void rmfFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rmfFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rmfFieldActionPerformed
+
+    private void ssfFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ssfFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ssfFieldActionPerformed
+
+    private void pvdFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pvdFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pvdFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,7 +399,7 @@ public class View extends javax.swing.JFrame {
         } catch (IllegalAccessException ex) {
             java.util.logging.Logger.getLogger(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.LoggeinputMonth(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            //java.util.logging.LoggeinputMonth(View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -197,13 +413,29 @@ public class View extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Submit;
+    private javax.swing.JTextField healthInsuranceField;
     private javax.swing.JTextField inputCryptoProfit;
     private javax.swing.JTextField inputMonth;
     private javax.swing.JTextField inputSalary;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField lifeInsuranceField;
+    private javax.swing.JCheckBox personalDiscountBox;
+    private javax.swing.JTextField pvdField;
+    private javax.swing.JTextField rmfField;
+    private javax.swing.JTextField socialInsuranceField;
+    private javax.swing.JTextField ssfField;
     private javax.swing.JButton viewTable;
     // End of variables declaration//GEN-END:variables
 }
